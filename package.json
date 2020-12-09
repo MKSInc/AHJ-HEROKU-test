@@ -1,0 +1,27 @@
+{
+  "name": "ahj-heroku-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "forever start server.js",
+    "watch": "forever start -l forever.log -o out.log -e err.log -a -w server.js",
+    "stop": "forever stop server.js"
+  },
+  "engines": {
+    "node": "11.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MKSInc/AHJ-HEROKU-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MKSInc/AHJ-HEROKU-test/issues"
+  },
+  "homepage": "https://github.com/MKSInc/AHJ-HEROKU-test#readme",
+  "dependencies": {
+    "forever": "^3.0.4"
+  }
+}
