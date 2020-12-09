@@ -4,9 +4,8 @@
   "main": "index.js",
   "scripts": {
     "prestart": "npm install",
-    "start": "forever start server.js",
-    "watch": "forever start -l forever.log -o out.log -e err.log -a -w server.js",
-    "stop": "forever stop server.js"
+    "start": "forever -a server.js",
+    "watch": "forever -w server.js"
   },
   "engines": {
     "node": "11.x"
