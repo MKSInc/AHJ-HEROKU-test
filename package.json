@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "prestart": "npm install",
-    "start": "forever start -a server.js",
-    "watch": "forever start -a -w server.js"
+    "start": "forever -a server.js",
+    "watch": "forever -a -w server.js"
   },
   "engines": {
     "node": "11.x"
