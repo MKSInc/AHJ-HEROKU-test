@@ -1,7 +1,8 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-   res.end('Server response');
+   res.end('Server response' +
+      '\nURL: ' + req.url);
 });
 
 const PORT = process.env.PORT || 7070;
